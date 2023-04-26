@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="esm">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarist_Fox</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/fox.webp">
+</head>
+  <body>
+    <header id="header">
+        <div class="center">
+          <!-- LOGO  -->
+          <div id="logo">
+              <img src="../img/fox.webp" class="logo" alt="logotipo">
+          </div>
+          <!-- MENU  -->
+          <nav id="menu">
+            <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../html/guitarras.html">Guitarras</a></li>
+              <li><a href="../html/accesorios.html">Accesorios</a></li>
+              <li><a href="../html/formulario.html">Usuarios</a></li>
+            </ul>
+          </nav>
+        <!-- LIMPIAR FLOTADOS  -->
+        <div class="clearfix"></div>
+      </div>
+    </header>
+
+    <div class="center">
+      <section id="content">
+        <h1 class="subheader">Ingresar Usuario</h1>
+
+        <form class="mid-form" id="formulario">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" class="errores" name="nombre">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="errores" name="email">
+          </div>
+
+          <div class="form-group">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="password" class="errores" name="password">
+          </div>
+
+          <div class="form-group radiobtn">
+            <input type="radio" name="genero" id="hombre" value="hombre" /> Masculino
+            <input type="radio" name="genero" id="mujer" value="mujer" /> Femenino
+          </div>
+
+          <div class="clearfix"></div>
+
+          <input type="submit" id="guardar" value="Iniciar Sesión" class="btn btn-succes" />
+          <input type="submit" id="boton" value="Registrarse" class="btn btn-danger" />
+          <div id="error"></div>
+        </form>
+
+      </section>
+
+      <div class="clearfix"></div>
+    </div>
+
+    <!-- FOOTER  -->
+
+    <footer id="footer">
+      <div class="center">
+        <p>&copy; Guitarist_Fox</p>
+      </div>
+    </footer>
+  </body>
+</html>
