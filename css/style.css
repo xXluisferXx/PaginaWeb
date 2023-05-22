@@ -13,7 +13,7 @@ body{
 }
 /* Encabezado */
 #header{
-  height: 90px;
+  height: 60px;
   width: 100%;
   background: white;
   border-bottom: 1px solid #ccc;
@@ -31,61 +31,61 @@ body{
   clear: both;
 }
 
-/* Logo  */
-
-#logo{
-  width: 30%;
-  font-size: 30px;
-  float: left;
-  margin-top: 23px;
-  
-}
-
-img.logo {
-  width: 50px;
-  height: 50px;
-}
-
-#brand{
-  display: block;
-  margin: px;
-  float: left;
-}
 
 /* Menu  */
 
-#menu{
-  width: 70%;
-  float: right;
-  font-size: 18px;
+nav{
+  width: 100%;
+  height: 88px;
+  background: radial-gradient(circle, rgb(248, 244, 18) 15%, rgb(245, 70, 26) 30%, rgb(221, 15, 15) 100%);
+  border-bottom: 1px 1px 10px 0 rgba(0,0,0,.2);
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.747);
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
-#menu ul{
-  line-height: 55px;
-  width: 60%;
-  float: right;
+.nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  align-items: center;
 }
 
-#menu ul li{
-  list-style: none;
-  height: 46px;
-  display: inline-block;
-  margin-left: 15px;
-  margin-right: 15px;
+.enlaces-header{
+  font-weight: 300;
+  margin: auto;
+  transition: all ease-in-out .6s;
 }
 
-#menu ul a{
+.nav .enlaces-header a {
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  color: #444;
-  transition: 300ms all;
+  margin-left: 20px;
+  padding: 12px;
+  border-radius: 10px;
 }
 
-#menu ul a:hover{
- color: #fdfdfd
+.nav .enlaces-header a:hover{
+  color: #000000;
+  background-color:rgba(0, 0, 0, 0.297);
+  border-color: aliceblue;
+  transition: all ease-in-out .3s;
 }
 
-#menu ul input{
-  width: 160px;
+.hamburguer{
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+  z-index: 100;
+  display: none;
+}
+
+.hamburguer > i {
+  font-size: 25px;
+  line-height: 80PX;
 }
 
 
@@ -108,7 +108,7 @@ justify-content: center;
 }
 
 #slider h1{
-  margin-top: 0.2px;
+  margin-top: -1px;
   text-align: center;
   padding-top: 160px;
   font-size: 45px;
@@ -251,6 +251,16 @@ textarea:focus{
 
 /* Articulos  */
 
+#guitarras{
+  width: 200px;
+  height: 200px;
+}
+
+#accesorios{
+  width: 200px;
+  height: 200px;
+}
+
 .article-item{
   width: 100%;
   height: 100%;
@@ -263,6 +273,21 @@ textarea:focus{
 .article-btn{
   height: 132px;
 }
+
+button{
+  border-radius: 15px;
+  background-color: #eee;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.image-wrap img{
+  border-radius: 15px;
+  border-color: hsl(0, 100%, 50%);
+  margin-top: 10px;
+}
+
 
 
 .article-item .image-wrap{
@@ -313,14 +338,16 @@ textarea:focus{
   /* color: black; */
 }
 
-
-/* Articulos detalles  */
+/* articulos detail  */
 
 .article-detail .image-wrap{
   float: none;
   width: 100%;
   height: 300px;
 }
+
+/* guitarras  */
+
 
 .guitar_flex img{
   width: 10%;
@@ -329,17 +356,42 @@ textarea:focus{
 .guitar_flex{
   margin-top: 10px;
   border: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 65px;
+}
+.guitarra {
+  border-radius: 10px;
 }
 
+.guitarra:hover{
+  background-color: #ff0000;
+  color: #fff;
+  transition: all ease-in-out .5s;
+}
+
+/* accesorios */
+
 .Accesor_flex img{
-  width: 30%;
+  width: 10%;
 }
 
 .Accesor_flex{
   margin: 10px;
   border: none;
-  display: flex;  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 65px;  
+}
+
+.accesorios{
+  border-radius: 10px;
+}
+
+.accesorios:hover{
+  background-color: #ff0000;
+  color: #fff;
+  transition: all ease-in-out .5s;
 }
 
 /* Formulario  */
@@ -374,109 +426,96 @@ textarea{
   float: center;
 }
 
+.formulario{
+  border-radius: 10px;
+  background: radial-gradient(circle, rgb(248, 244, 18) 15%, rgb(245, 70, 26) 30%, rgb(221, 15, 15) 100%);
+  width: 600px;
+  height: 350px;
+  margin-left: 360px;
+}
 
+.botones{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px; 
+
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  width: 100%;
+  min-height: 25px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  padding: 3px;
+  transition: 300ms all;
+
+}
 
 /* RESPONSIVE  */
 
+@media screen and (max-width:900px) {
+.formulario{
+margin-left: 16%;
+}
 
-@media (max-width: 1540px){
-  .center{
-   width: 85%;
+}
+@media screen and (max-width:700px) {
+
+  .hamburguer{
+    display: block;
+   }
+
+   .enlaces-header{
+    position: fixed;
+    background-color: #ff0000;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    clip-path: circle(0.0% at 0 0);
+   }
+   .nav .hamburgueropen{
+    clip-path: circle(150% at 0 0);
+   }
+   .nav .enlaces-header a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 20px;
+    width: 50%;
+    background-color: #e04949;
+   }
+   .nav .enlaces-header a:hover{
+    color: #ff0000;
+    background-color: #fff;
+   }
+
+   /* la visual principal */
+
+   .h1{
+    font-size: 35px;
+   }
+   .contenido-header{
+    width: 100%;
+    height: 530px;
+    display: block;
+   }
+   .contenido-header > img{
+   width: 120px;
+   height: 120px;
+   animation: ease-in animacion 0.5s;
+   margin-top: 20px;
+   margin-left: 0px;
+   }
+   .texto-header{
+    margin-left: 0px;
+   }
+   .formulario{
+    margin-left: 6%;
   }
- }
- 
- @media (max-width: 1350px){
-   .center{
-    width: 95%;
-   }
- 
-   #menu ul{
-       width: auto;
-   }
- }
- 
- @media (max-width: 910px){
- 
-   #logo{
-       float: none;
-       width: 300px;
-       margin: 0px auto;
-       margin-top: 20px;
- 
-   }
- 
-   #header{
-       height: 110px;
-   }
-   #menu,
-   #menu ul{
-       clear: both;
-       float: none;
-       width: 100%;
-       margin: 0px;
-       padding: 0px;
-       line-height: 40px;
-   }
- 
-   #content{
-       float: none;
-       width: 100%;
-   }
- 
-   #sidebar{
-       float: none;
-       width: 60%;
-       margin: 0px auto;
-       margin-bottom: 50px;
-   }
- 
-   #slider h1{
-       padding-top: 115px;
-       font-size: 25px;
-   }
- 
-   .mid-form{
-       width: 70%;
-   }
- }
- 
- @media (max-width: 505px) {
-   
-   #header{
-       min-height: 130px;
-       overflow: hidden;
-   }
- 
-   #menu,
-   #menu ul{
-       line-height: 55px;
-   }
- 
-   #menu ul li{
-       margin-left: 7px;
-       margin-right: 7px;
-   }
- 
-   #slider{
-       height: 180px;
-   }
- 
-   #slider h1{
-       font-size: 19px;
-       padding-top: 35px;
-   }
- 
-   #slider .btn-white{
-       margin-top: 20px;
-   }
-   
-   #slider.slider-small{
-       height: 100px;
-   }
- 
-   #slider.slider-small h1{
-       padding-top: 35px;
-   }
- 
- 
- }
+}
+

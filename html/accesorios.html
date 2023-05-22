@@ -11,24 +11,24 @@
   <body>
     <header id="header">
       <div class="center">
-        <!-- LOGO  -->
-        <div id="logo">
-            <img src="../img/fox.webp" class="logo" alt="logotipo">
-        </div>
-        <!-- MENU  -->
-        <nav id="menu">
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../html/guitarras.html">Guitarras</a></li>
-            <li><a href="../html/accesorios.html">Accesorios</a></li>
-            <li><a href="../html/formulario.html">Usuarios</a></li>
-        </ul>
-        </nav>
-
-        <!-- LIMPIAR FLOTADOS  -->
-        <div class="clearfix"></div>
+          <!-- MENU  -->
+          <nav>
+              <section class="contenedor nav">
+                  <div class="enlaces-header">
+                    <a href="../index.html">inicio</a>
+                    <a href="../html/guitarras.html">Guitarras</a>
+                    <a href="../html/accesorios.html">Accesorios</a>
+                    <a href="../html/formulario.html">Usuario</a>
+                  </div>
+                  <div class="hamburguer">
+                      <i class="fa-solid fa-bars"></i>
+                  </div>
+              </section>
+          </nav>
+          <!-- LIMPIAR FLOTADOS  -->
+          <div class="clearfix"></div>
       </div>
-    </header>
+  </header>
 
     <div id="slider" class="slider">
       <h1>GUITARRAS</h1>
@@ -39,11 +39,10 @@
         <h2 class="subheader">Accesorios</h2>
           <div id="articles">
               <div class="Accesor">
-                <div class="Accesor_flex">
-                  
-                  <div>
+                <div class="Accesor_flex"> 
+                  <div class="accesorios">
                     <div class="image-wrap">
-                      <img src="../img/Afinador.jpg" alt="Afinador">
+                      <img src="../img/Afinador.jpg" alt="Afinador" id="accesorios">
                     </div>
                       <h2>Afinador</h2>
                     <span class="date">
@@ -55,9 +54,9 @@
                     </div>
                   </div>
   
-                  <div>
+                  <div class="accesorios">
                     <div class="image-wrap">
-                      <img src="../img/Cejillas.jpeg" alt="Cejillas">
+                      <img src="../img/Cejillas.jpg" alt="Cejillas" id="accesorios">
                     </div>
                       <h2>Cejillas</h2>
                     <span class="date">
@@ -68,38 +67,44 @@
                       <button type="button">COMPRAR</button>
                     </div>
                   </div>
-  
-                  <div>
-                    <div class="image-wrap">
-                      <img src="../img/Correa.jpg" alt="Correa">
-                    </div>
-                      <h2>Correa</h2>
-                    <span class="date">
-                      Precio: <span>$50</span>
-                    </span>
-                      <span>cantidad: 20</span>            
-                    <div>
-                      <button type="button">COMPRAR</button>
-                    </div>
-                  </div>
-  
-                  <div>
-                    <div class="image-wrap">
-                      <img src="../img/Puas.jpeg" alt="Puas">
-                    </div>
-                      <h2>Puas</h2>
-                    <span class="date">
-                      Precio: <span>$1</span>
-                    </span>
-                      <span>cantidad: 100</span>
-                    <div>
-                      <button type="button">COMPRAR</button>
-                    </div>
-                  </div>
-                
                 </div>
               </div>
           </div>
+
+          <h2></h2>
+          <div id="articles">
+            <div class="Accesor">
+              <div class="Accesor_flex">
+                <div class="accesorios">
+                  <div class="image-wrap">
+                    <img src="../img/Correa.jpeg" alt="Correa" id="accesorios">
+                  </div>
+                    <h2>Correa</h2>
+                  <span class="date">
+                    Precio: <span>$50</span>
+                  </span>
+                    <span>cantidad: 20</span>            
+                  <div>
+                    <button type="button">COMPRAR</button>
+                  </div>
+                </div>
+
+                <div class="accesorios">
+                  <div class="image-wrap">
+                    <img src="../img/Puas.jpg" alt="Puas" id="accesorios">
+                  </div>
+                    <h2>Puas</h2>
+                  <span class="date">
+                    Precio: <span>$1</span>
+                  </span>
+                    <span>cantidad: 100</span>
+                  <div>
+                    <button type="button">COMPRAR</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>    
       </section>
     </div>
            
@@ -115,5 +120,6 @@
 
   </div>
   <script src="https://kit.fontawesome.com/8a47cc8987.js" crossorigin="anonymous"></script>
+  <Script src="../js/my.js"></Script>
   </body>
 </html>
