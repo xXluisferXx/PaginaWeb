@@ -84,7 +84,7 @@ nav{
 }
 
 .hamburguer > i {
-  font-size: 25px;
+  font-size: 45px;
   line-height: 80PX;
 }
 
@@ -518,4 +518,41 @@ margin-left: 16%;
     margin-left: 6%;
   }
 }
+@media screen and (max-width:900px) {
+/* usuario */
+  .formulario{
+    width: 350px;
+    margin-top: 200px;
+    padding: 30px 0 30px 0;
+  }
+  .radiobtn{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  margin-left: -20px;
+  }
+  .botones{
+    margin-left: -60px;
+  }
+/* accesorios */
+  #accesorios {
+    width: 150px;
+    height: 150px;
+}
+.Accesor_flex{
+  grid-gap: 10px;
+}
 
+/* guitarras */
+#guitarras{
+  width: 150px;
+  height: 150px;
+}
+.guitar_flex{
+grid-gap: 10px;
+}
+/* guitarras */
+#footer{
+  margin-top: 300px;
+}
+}
