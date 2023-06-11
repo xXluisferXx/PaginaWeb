@@ -202,15 +202,10 @@ justify-content: center;
 }
 
 .btn-succes{
-  background: rgb(190, 0, 0);
+  background: yellow;
 }
 
-.btn-danger{
-  background: rgb(221, 191, 19);
-}
-
-.btn-succes:hover,
-.btn-danger:hover{
+.btn-succes:hover{
   background: black;
 }
 
@@ -435,10 +430,10 @@ textarea{
 }
 
 .botones{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: center;
   grid-gap: 5px; 
-
+  margin-top: 30px;
+  margin-left: -9px;
 }
 
 input[type="text"], input[type="password"], input[type="email"] {
@@ -448,14 +443,47 @@ input[type="text"], input[type="password"], input[type="email"] {
   margin-bottom: 5px;
   padding: 3px;
   transition: 300ms all;
-
 }
 
 /* RESPONSIVE  */
 
 @media screen and (max-width:900px) {
+
 .formulario{
-margin-left: 16%;
+  width: 350px;
+  margin-top: 200px;
+  margin-left: 30%;
+  padding: 30px 0 30px 0;
+}
+.radiobtn{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  margin-left: -20px;
+}
+.botones{
+    margin-left: 6px;
+ }
+/* accesorios */
+  #accesorios {
+    width: 150px;
+    height: 150px;
+}
+.Accesor_flex{
+  grid-gap: 10px;
+}
+
+/* guitarras */
+#guitarras{
+  width: 150px;
+  height: 150px;
+}
+.guitar_flex{
+grid-gap: 10px;
+}
+/* guitarras */
+#footer{
+  margin-top: 300px;
 }
 
 }
@@ -515,44 +543,12 @@ margin-left: 16%;
     margin-left: 0px;
    }
    .formulario{
-    margin-left: 6%;
+    margin-left: 25%;
   }
 }
-@media screen and (max-width:900px) {
-/* usuario */
-  .formulario{
-    width: 350px;
-    margin-top: 200px;
-    padding: 30px 0 30px 0;
-  }
-  .radiobtn{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5px;
-  margin-left: -20px;
-  }
-  .botones{
-    margin-left: -60px;
-  }
-/* accesorios */
-  #accesorios {
-    width: 150px;
-    height: 150px;
-}
-.Accesor_flex{
-  grid-gap: 10px;
-}
+@media screen and (max-width:400px) {
 
-/* guitarras */
-#guitarras{
-  width: 150px;
-  height: 150px;
-}
-.guitar_flex{
-grid-gap: 10px;
-}
-/* guitarras */
-#footer{
-  margin-top: 300px;
+.formulario{
+  margin-left: 6%;
 }
 }
